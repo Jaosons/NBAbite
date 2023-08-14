@@ -1,6 +1,7 @@
-#                                                                                 Projeto HTML
+![image](https://github.com/Jaosons/metrohtml.github.io/assets/128099629/3ef01083-6666-43e0-9f20-0999338f6e3d)#                                                                                 Projeto HTML
 ### João Alexandre Nunes Belchior - 202303467079
 ### Samuel Bernardes - 202303459696
 
 #### Buscamos fazer um site como o  "site transfermarkt" mas diferente do transfermarkt, que tem seu foco em transferências de futebol, iremos fazer sobre basquete.
-![cachorro[(https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ)
+![image](https://github.com/Jaosons/metrohtml.github.io/assets/128099629/6c5904c6-c486-4c72-899a-163d5a35743e)
+
