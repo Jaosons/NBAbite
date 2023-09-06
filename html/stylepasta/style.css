@@ -2,9 +2,7 @@
 
 body {
     background-color: rgb(230, 230, 230);
-       margin: 0;
-       
-
+    margin: 0;
 }
 main {
     text-align: center;
@@ -12,8 +10,7 @@ main {
     width: 70%;
     height: 40px;
     font-size: 130%;
-    margin: auto;
-   
+    margin: auto;  
 }
 
 a {
