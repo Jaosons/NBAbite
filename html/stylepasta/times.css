@@ -28,9 +28,29 @@ div {
     display: inline-block;
     padding-right: 0px;
 }
+#ATL {
+    float: left;
+}
 
+#PAC {
+    float: center;
+}
+
+#CEN {
+    float: right;
+}
 
 #Quebra {
     display: block;
 }
 
+#NOR {
+    float: left;
+}
+
+#SUD {
+    float: center;
+}
+#SDO {
+    float: right
+}
