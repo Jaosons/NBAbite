@@ -1,22 +1,29 @@
 @charset "UTF-8";
 
-body {
-    background-color: rgb(230, 230, 230);
-    margin: 0;
-}
-main {
-    text-align: center;
-    background-color: rgb(26, 49, 81);
-    width: 80%;
-    height: 40px;
-    font-size: 130%;
-    margin: auto;  
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-a {
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+nav {
+    background-color: rgb(26, 49, 81);
+    text-align: center;
+    padding-top:5px;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+}
+
+nav > a {
     color: rgb(249, 242, 242);
-    padding: 20px;
+    font-size: 130%;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {

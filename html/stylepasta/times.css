@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     text-align: center;
 }
@@ -11,14 +16,15 @@ a{
 ul{
     font-size: 20px;
     font-weight: bold;
-    padding-left: 0px;
 }
+
 li{
     font-weight: bold;
     font-size: 20px;
     list-style: none;
     text-align:left;
 }
+
 img{
     width: 40px;
     height: 40px;
@@ -28,6 +34,7 @@ div {
     display: inline-block;
     padding-right: 0px;
 }
+
 #ATL {
     float: left;
 }

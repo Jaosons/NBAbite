@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    padding: 0x;
+    margin: 0px;
+}
+
 body{
     text-align: left;
     background-color: rgb(216, 218, 221);
@@ -25,18 +30,8 @@ div {
     width: 40%;
     text-align: center;
 }
-#direito {
-    float: right;
-}
-
-#esquerdo{
-    margin-left: 0%;
-
-}
 
 img {
     height: 20px;
     width: 20px;
  }
-
-
