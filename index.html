@@ -4,44 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="html/stylepasta/style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>     
         CADASTRO LOGIN SEARCH-BAR LOGO 
     </header>
-    <nav>
-        <a href="html/stats/stats.html">ESTATÍSTICAS</a>
-        <a href="html/TIMES/TIMES.html">TIMES</a>
-        <a href="html/players/player.html">JOGADORES</a>
-        <a href="html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a>
-        <a href="html/calender/calender.html">CALENDÁRIO</a>
-        <a href="html/result/result.html">RESULTADOS</a>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
+        <ul>
+            <li><a href="html/stats/stats.html">ESTATÍSTICAS</a></li>
+            <li><a href="html/TIMES/TIMES.html">TIMES</a></li>
+            <li><a href="html/players/player.html">JOGADORES</a></li>
+            <li><a href="html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="html/calender/calender.html">CALENDÁRIO</a></li>
+            <li><a href="html/result/result.html">RESULTADOS</a></li>
+        </ul>
     </nav>
     <section>
+        <aside id="calendario">
+            <table>
+                <thead>
+                    <legend>NBA - Calendário</legend>
+                    <th>Matchup</th>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" alt=""><a href="#">Dallas</a> em <a href="#">Minnesota</a></td>
+                        <td>05/10</td>
+                        <td>13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th>Matchup</th>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" alt=""><a href="#">Dallas</a> em <a href="#">Minnesota</a></td>
+                        <td>05/10</td>
+                        <td>13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th>Matchup</th>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" alt=""><a href="#">Dallas</a> em <a href="#">Minnesota</a></td>
+                        <td>05/10</td>
+                        <td>13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th>Matchup</th>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" alt=""><a href="#">Dallas</a> em <a href="#">Minnesota</a></td>
+                        <td>05/10</td>
+                        <td>13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
         <article>
             <div class="noticia">
-
+                <a href="https://jumperbrasil.lance.com.br/damian-lillard-nunca-juntaria-golden-state-warriors/" target="_blank">
+                    <img src="html/Damian-Lillard-e-Stephen-Curry.png" alt="foto-noticia" class="image-not"><br>
+                    <img src="html/logo.png" alt="JumperBrasil" class="logo-not"><h1> Damian Lillard diz que nunca se juntaria ao Golden State Warriors</h1>
+                </a>
+                <p>
+                    Luiz Inácio Lula da Silva é eleito nas urnas o 39º Presidente do Brasil!
+                </p>
             </div>
             <div class="noticia">
-
+                <img src="#" alt=""><br>
+                <h1>CHOQUEI</h1>
+                <p>
+                    Diogo Defante está embarcando para a Copa do Mundo no Catar. Esse são os últimos momentos dele em liberdade.
+                </p>
             </div>
             <div class="noticia">
-
+                <img src="#" alt=""><br>
+                <h1>CHOQUEI</h1>
+                <p>
+                    Vídeo da reação do pai vendo seu filho andar de bicicleta pela primeira vez sozinho viraliza na web
+                </p>
             </div>
             <div class="noticia">
-
+                <img src="#" alt=""><br>
+                <p>
+                    <h1>CHOQUEI</h1>
+                    <p>
+                        Mercado reage após a vitória de Lula. O dólar cai e o Real se torna a moeda que mais se valoriza no mundo
+                    </p>
+                </p>
             </div>
         </article>
-        <aside class="calendario">
-
-        </aside>
-        <aside class="classificação">
-
+        
+        <aside id="classificação">
+            <h1>Classificação</h1>
+            <table>
+                <thead>
+                    <th>Oeste</th>
+                    <th>Leste</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"></a>1. Denver Nuggets</td>
+                        <td><a href="#">1. Milwaukee Bucks</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"></a>2. Memphis Grizzlies</td>
+                        <td><a href="#">2. Boston Celtics</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">3. Sacramento Kings</a></td>
+                        <td><a href="#"></a>3. Philadelphia 76ears</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">4. Phoenix Suns</a></td>
+                        <td><a href="#"></a>4. Cleveland Cavaliers</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">5. LA Clippers</a></td>
+                        <td><a href="#">5. New York Knicks</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">6. Golden State Warriors</a></td>
+                        <td><a href="#">6. Brooklyn Nets</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </aside>
     </section>
     <footer>
         <a href="sobre.html">SOBRE</a>
     </footer>
+    <script src="html/script/script.js"></script>
 </body>
 </html>
