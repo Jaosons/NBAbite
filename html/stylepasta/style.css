@@ -7,16 +7,17 @@
 
 body,hmtl {
     overflow-x: hidden;
+    
 }
 
 header {
     min-width: 100%;
     height: 10vh;
-    background-color: blue;
+   
 }
 
 i {
-    background-color: blueviolet;
+    background-color: #1a3151; ;
     min-width: 100%;
     text-align: center;
     padding-bottom: 4px;
@@ -24,25 +25,29 @@ i {
 }
 
 nav {
-    background-color: aqua;
+   background-color: #1a3151;
     padding-bottom: 4px;
 }
 
 nav ul {
     text-align: center;
-}
+    }
 
 nav li {
     margin-bottom: 5px;
 }
 
+nav a{
+    color: white;
+    text-decoration: none;
+}
 a {
     text-decoration: none;
     color: black;
 }
 
 aside#calendario {
-    background-color: gray;
+   
     display: flex;
     position: center;
     width: 100vw;
@@ -58,13 +63,13 @@ aside#calendario > table {
 }
 
 article {
-    background-color: green;
+    
     margin: 10px
 }
 
 div.noticia {
     text-align: center;
-    background-color: darkgreen;
+    ;
     padding-top: 12px;
     margin: 5px 0px;
 }
@@ -115,13 +120,13 @@ aside#classificação td  {
 }
 
 footer {
-    background-color: brown;
+   
     text-align: center;
 }
 
 @media screen and (min-width: 768px){
     body {
-        background-color: purple;
+       background-color: rgba(255, 255, 255, 0.616);
     }
 
     i#burguer {
