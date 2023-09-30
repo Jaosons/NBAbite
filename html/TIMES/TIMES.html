@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIMES</title>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../stylepasta/times.css">
 </head>
-<body>
-    <nav>
-        <a href="../stats/stats.html">ESTATÍSTICAS</a>
-        <a href="../TIMES/TIMES.html">TIMES</a>
-        <a href="../players/player.html">JOGADORES</a>
-        <a href="../tabela_times/statstimes.html">CLASSIFICAÇÃO</a>
-        <a href="../calender/calender.html">CALENDÁRIO</a>
-        <a href="../result/result.html">RESULTADOS</a>
-    </nav>
-    <div>
-        <h1>ATLÂNTICO</h1>
+<body onresize="mudouTamanho()">
+    <header>     
+        CADASTRO LOGIN SEARCH-BAR LOGO 
+    </header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
         <ul>
-            <li><a href="TIMES_LESTE/Celtics.html"><img src="../imagens/boston.png" alt="Boston Celtics">Boston Celtics</a></li>
-            <li><img src="../imagens/nets.png" alt="">Brooklyn Nets</li>
-            <li><a href="TIMES_LESTE/newYorkKnicks.html"><img src="../imagens/knicks.png" alt="">New York Knicks</a></li>
-            <li><a href="TIMES_LESTE/76ers.html"><img src="../imagens/76.png" alt="">Philadelphia 76ers</a>  </li>
-            <li><img src="../imagens/toronto.png" alt="">Toronto Raptors</li>
+            <li><a href="html/stats/stats.html">ESTATÍSTICAS</a></li>
+            <li><a href="html/TIMES/TIMES.html">TIMES</a></li>
+            <li><a href="html/players/player.html">JOGADORES</a></li>
+            <li><a href="html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="html/calender/calender.html">CALENDÁRIO</a></li>
+            <li><a href="html/result/result.html">RESULTADOS</a></li>
         </ul>
+    </nav>
+    <div id="container">
+        <div>
+            <h1>ATLÂNTICO</h1>
+            <ul>
+                <li><a href="TIMES_LESTE/Celtics.html"><img src="../imagens/boston.png" alt="Boston Celtics">Boston Celtics</a></li>
+                <li><img src="../imagens/nets.png" alt="">Brooklyn Nets</li>
+                <li><a href="TIMES_LESTE/newYorkKnicks.html"><img src="../imagens/knicks.png" alt="">New York Knicks</a></li>
+                <li><a href="TIMES_LESTE/76ers.html"><img src="../imagens/76.png" alt="">Philadelphia 76ers</a>  </li>
+                <li><img src="../imagens/toronto.png" alt="">Toronto Raptors</li>
+            </ul>
         </div>
-
         <div>
             <h1>PACÍFICO</h1>
             <ul>
@@ -35,7 +42,7 @@
                 <li> <a href="TIMES_OESTE/suns.html"><img src="../imagens/suns.png" alt="">Phoenix Suns</a></li>
                 <li> <a href="TIMES_OESTE/kings.html"><img src="../imagens/kings.png" alt="">Sacramento Kings</a></li>
             </ul>
-        </div>  
+        </div>
         <div>
             <h1>CENTRAL</h1>
             <ul>
@@ -46,9 +53,8 @@
                 <li><img src="../imagens/bucks.png" alt=""><a href="TIMES_LESTE/Buck.html">Milwaukee Bucks </a></li>
             </ul>
         </div>
-    <div id="Quebra"></div>
         <div>
-            <h1>NOROESTE</h1> 
+            <h1>NOROESTE</h1>
             <ul>
                 <li><a href="TIMES_OESTE/denver.html"><img src="../imagens/nuggets.png" alt="">Denver Nuggets</a></li>
                 <li><img src="../imagens/timberwolves.png" alt="">Minnesota Timberwolves</li>
@@ -77,5 +83,7 @@
                 <li><img src="../imagens/spurs.png" alt="">San Antonio Spurs</li>
             </ul>
         </div>
+    </div>
+        <script src="../script/script.js"></script>
 </body>
 </html>
