@@ -53,9 +53,10 @@ nav {
     background-color: aqua;
     padding-bottom: 4px;
 }
-nav
-nav > li {
+nav ul {
     text-align: center;
+}
+nav li {
     margin-bottom: 5px;
 }
 
@@ -72,6 +73,9 @@ aside#calendario {
     overflow-x: auto;
 }
 
+aside#calendario > h1 {
+    display: none;
+}
 aside#calendario > table {
     background-color: lightgray;
 
@@ -141,7 +145,7 @@ footer {
 
 @media screen and (min-width: 768px){
     body {
-        background-color: black;
+        background-color: purple;
     }
 
     i#burguer {
@@ -157,5 +161,15 @@ footer {
 
     nav > ul > li {
         display: inline-block;
+    }
+
+    aside#calendario {
+        position: absolute;
+        display: block;
+
+    }
+
+    article {
+        width: 60vw;
     }
 }
