@@ -13,19 +13,63 @@
         <input type="text" id="name" name="nome" placeholder="Digite seu Nome" ><br>
         <label for="sobrenome">Sobrenome: </label>
         <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"><br>
-       <label for="date">Data de nascimento: </label>
+        <label for="date">Data de nascimento: </label>
         <input id =  "forms" type="date" name="date"><br>
+        <label for="cpf">CPF: </label><br>
+        <input type="text" name="cpf" id="" placeholder="Digite seu CPF"><br>
         <label for="email">E-mail: </label><br>
         <input type="email" name="email" placeholder="Digite seu email"><br>
         <label for="senha">Senha: </label><br>
         <input type="password" name="senha" placeholder="Digite sua senha"><br>
         <label for="sx">Qual seu gênero: </label><br>
         <select name="sx" id="ge">
-        <option value="mas">Masculino </option>
-        <option value="fem">Feminino </option>
-        <option value="perso">Outros</option>
-        <input id= env type="submit" value="Enviar" enviar onclick="Submit()"><br>
-        <button id="Cancel"><a href="index.html">Voltar</a></button>
+            <option value="mas">Masculino</option>
+            <option value="fem">Feminino</option>
+            <option value="perso">Outros</option>
+        </select><br>
+        <label for="estado">Estado</label><br>
+        <select name="estado" id="est">
+            <option value="" selected>Escolha seu Estado</option>
+            <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="PR">Paraná (PR)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+            </optgroup>
+            <optgroup label="Centro-Oeste">
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="AL">Alagoas (AL)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="SE">Sergipe (SE)</option>
+            </optgroup>
+            <optgroup label="Norte">
+                <option value="AC">Acre (AC)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="TO">Tocantins (TO)</option>
+            </optgroup>
+        </select>
+        <input id= env type="submit" value="Enviar" onclick="Submit()"><br>
+        <button id="Cancel"><a href="index.html">Cancelar</a></button>
     </form>
 </body>
 </html>
