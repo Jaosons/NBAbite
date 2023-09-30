@@ -8,24 +8,24 @@
 </head>
 <body>
     <form method="get">
-        <input class = "forms" type="text" name="nome" placeholder="Digite seu Nome" ><br>
-        <input class = "forms" type="text" name="sobrenome" placeholder="Digite seu sobrenome"><br>
-       
+        <h1>Cadastro</h1>
+        <label for="nome">Nome: </label><br>
+        <input type="text" id="name" name="nome" placeholder="Digite seu Nome" ><br>
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"><br>
+       <label for="date">Data de nascimento: </label>
         <input id =  "forms" type="date" name="date"><br>
-        <input class = "forms" type="email" name="email" placeholder="Digite seu email"><br>
-        <input class = "forms" type="password" name="senha" placeholder="Digite sua senha"><br>
-        <label for="sx">Qual seu gênero: </label>
+        <label for="email">E-mail: </label><br>
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+        <label for="senha">Senha: </label><br>
+        <input type="password" name="senha" placeholder="Digite sua senha"><br>
+        <label for="sx">Qual seu gênero: </label><br>
         <select name="sx" id="ge">
-        <option value="mas"> Masculino </option>
-        <option value="fem"> feminino </option>
-        <option value="perso">outros</option>
-    
-
-
-       
-        <input id= env type="submit" value="enviar" enviar >
-
-
+        <option value="mas">Masculino </option>
+        <option value="fem">Feminino </option>
+        <option value="perso">Outros</option>
+        <input id= env type="submit" value="Enviar" enviar onclick="Submit()"><br>
+        <button id="Cancel"><a href="index.html">Voltar</a></button>
     </form>
 </body>
 </html>
