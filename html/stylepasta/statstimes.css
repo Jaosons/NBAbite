@@ -33,11 +33,13 @@ i {
     text-align: center;
     padding-bottom: 4px;
     cursor: pointer;
+    background-color: var(--cor1);
 }
 
 nav, nav a {
     padding-bottom: 4px;
-    color: black;
+    color: white;
+    background-color: var(--cor1);
 }
 
 nav ul {
@@ -50,6 +52,7 @@ nav li {
 
 a {
     text-decoration: none;
+    
 
 }
 
@@ -100,20 +103,18 @@ span.pc-nome {
     i#burguer {
         display: none;
     }
-    
-    nav {
+     nav {
         padding: 10px;
+        background-color: var(--cor1)
     }
 
     nav > ul {
         text-align: center;
     }
-
-    nav > ul > li {
+     nav > ul > li {
         display: inline-block;
-    }
-
-    h1 {
+     }
+      h1 {
         text-align: center;
         margin-top: 20px;
     }
