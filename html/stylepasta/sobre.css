@@ -24,6 +24,9 @@ header {
     background-color: var(--cor2);
     display: flex;
 }
+header a:visited{
+    color: black;
+}
 
 div#logo {
     flex: 1;
