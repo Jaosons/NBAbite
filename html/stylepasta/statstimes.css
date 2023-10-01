@@ -12,6 +12,15 @@
 body,hmtl {
     overflow-x: hidden;
 }
+.verde{
+    color: #094;
+}
+.verm{
+    color: red
+}
+.laranja{
+    color: orange;
+}
 
 header, header > a {
     min-width: 100%;
