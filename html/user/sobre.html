@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="html/stylepasta/sobre.css">
+    <link rel="stylesheet" href="../stylepasta/sobre.css">
 </head>
 <body onresize="mudouTamanho()">
-    <header>     
-        <a href="cadastro.html">CADASTRO</a> <a href="login.html">LOGIN</a> SEARCH-BAR LOGO 
-    </header>
+  <header>   
+      <div id="logo">
+          <img src="../img-not/NBAbite-Logo.png" alt="" id="logo-site">
+      </div>
+      <div id="search-bar">
+          <span>Barra de pesquisa</span>
+      </div> 
+      <div id="user">
+          <span><a href="./html/user/cadastro.html">CADASTRO</a><br></spam>
+          <span><a href="./html/user/login.html">LOGIN</a></spam>  
+      </div>
+  </header>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <nav id="itens"> 
         <ul>
-            <li><a href="html/stats/stats.html">ESTATÍSTICAS</a></li>
-            <li><a href="html/TIMES/TIMES.html">TIMES</a></li>
-            <li><a href="html/players/player.html">JOGADORES</a></li>
-            <li><a href="html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
-            <li><a href="html/calender/calender.html">CALENDÁRIO</a></li>
-            <li><a href="html/result/result.html">RESULTADOS</a></li>
+            <li><a href="../update.html">ESTATÍSTICAS</a></li>
+            <li><a href="../TIMES/TIMES.html">TIMES</a></li>
+            <li><a href="../update.html">JOGADORES</a></li>
+            <li><a href="../tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="../update.html">CALENDÁRIO</a></li>
+            <li><a href="../update.html">RESULTADOS</a></li>
         </ul>
     </nav>
 <body>
-  <div>
+  <div id="conteudo">
     <p>
       João Alexandre Nunes Belchior - 202303467079<br>
       Samuel Bernardes - 202303459696

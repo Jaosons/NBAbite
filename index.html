@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="html/stylepasta/style.css">
 </head>
 <body onresize="mudouTamanho()">
-    <header>     
-        <a href="./html/user/cadastro.html">CADASTRO</a> <a href="./html/user/login.html">LOGIN</a> SEARCH-BAR LOGO 
+    <header>   
+        <div id="logo">
+            <img src="./html/img-not/NBAbite-Logo.png" alt="" id="logo-site">
+        </div>
+        <div id="search-bar">
+            <span>Barra de pesquisa</span>
+        </div> 
+        <div id="user">
+            <span><a href="./html/user/cadastro.html">CADASTRO</a><br></spam>
+            <span><a href="./html/user/login.html">LOGIN</a></spam>  
+        </div>
     </header>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <nav id="itens"> 
@@ -20,6 +29,7 @@
             <li><a href="./html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
             <li><a href="./html/update.html">CALENDÁRIO</a></li>
             <li><a href="./html/update.html">RESULTADOS</a></li>
+            <li><a href="./html/user/sobre.html">SOBRE</a></li>
         </ul>
     </nav>
     <section>
@@ -85,35 +95,32 @@
         <article>
             <div class="noticia">
                 <a href="https://jumperbrasil.lance.com.br/damian-lillard-nunca-juntaria-golden-state-warriors/" target="_blank">
-                    <img src="./html/Damian-Lillard-e-Stephen-Curry.png" alt="foto-noticia" class="image-not"><br>
-                    <img src="./html/logo.png" alt="JumperBrasil" class="logo-not"><h1> Damian Lillard diz que nunca se juntaria ao Golden State Warriors</h1>
+                    <img src="./html/img-not/Damian-Lillard-e-Stephen-Curry.png" alt="foto-noticia" class="image-not"><br>
+                    <img src="./html/img-not/logo.png" alt="JumperBrasil" class="logo-not">
+                    <h1> Damian Lillard diz que nunca se juntaria ao Golden State Warriors</h1>
                 </a>
-                <p>
-                    Luiz Inácio Lula da Silva é eleito nas urnas o 39º Presidente do Brasil!
-                </p>
             </div>
             <div class="noticia">
-                <img src="#" alt=""><br>
-                <h1>CHOQUEI</h1>
-                <p>
-                    Diogo Defante está embarcando para a Copa do Mundo no Catar. Esse são os últimos momentos dele em liberdade.
-                </p>
+                    <a href="https://www.espn.com.br/nba/artigo/_/id/12650146/megatroca-nba-manda-lillard-para-bucks-mexe-astros-tres-times">
+                    <img src="./html/img-not/i.jpg" alt="" class="image-not"><br>
+                    <img src="https://logodownload.org/wp-content/uploads/2015/05/espn-logo-4-1.png" alt="" class="logo-not">
+                    <h1>Megatroca na NBA manda Lillard para os Bucks e mexe em astros de três times</h1>
+                    </a>
             </div>
             <div class="noticia">
-                <img src="#" alt=""><br>
-                <h1>CHOQUEI</h1>
-                <p>
-                    Vídeo da reação do pai vendo seu filho andar de bicicleta pela primeira vez sozinho viraliza na web
-                </p>
+                <a href="https://lakersbrasil.com/site/noticias/2023/09/nba_lakers_tem_otimas_noticias_em_relacao_a_lebron_james/">
+                <img class="image-not" src="./html/img-not/lebron-james-nba-recorde.png" alt=""><br> 
+                <img class="logo-not" src="./html/img-not/logo-labr.png" alt=""><br>
+                <h1>Lakers tem ótimas notícias em relação a LeBron James</h1>
+                </a>
             </div>
             <div class="noticia">
-                <img src="#" alt=""><br>
-                <p>
-                    <h1>CHOQUEI</h1>
-                    <p>
-                        Mercado reage após a vitória de Lula. O dólar cai e o Real se torna a moeda que mais se valoriza no mundo
-                    </p>
-                </p>
+                <a href="">
+                    <img class="image-not" src="./html/img-not/nba-magic-johnson-se-compara-stephen-curry-e-crava-quem-e-melhor_widemd.png" alt="">
+                    <img class="logo-not" src="./html/img-not/logo_sportbuzz.png" alt="">
+                    <h1>Magic Johnson se compara a Stephen Curry e crava quem é melhor
+                    </h1>
+                </a>
             </div>
         </article>
         
@@ -153,9 +160,6 @@
             </table>
         </aside>
     </section>
-    <footer>
-        <a href="./html/user/sobre.html">SOBRE</a>
-    </footer>
     <script src="./html/script/script.js"></script>
 </body>
 </html>

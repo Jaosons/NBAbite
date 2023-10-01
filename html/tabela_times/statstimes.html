@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="../stylepasta/statstimes.css">
 </head>
 <body onresize="mudouTamanho()">
-    <header>     
-        <a href="cadastro.html">CADASTRO</a> <a href="login.html">LOGIN</a> SEARCH-BAR LOGO 
+    <header>   
+        <div id="logo">
+            <img src="../img-not/NBAbite-Logo.png" alt="" id="logo-site">
+        </div>
+        <div id="search-bar">
+            <span>Barra de pesquisa</span>
+        </div> 
+        <div id="user">
+            <span><a href="./html/user/cadastro.html">CADASTRO</a><br></spam>
+            <span><a href="./html/user/login.html">LOGIN</a></spam>  
+        </div>
     </header>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <nav id="itens"> 
@@ -17,9 +26,10 @@
             <li><a href="../update.html">ESTATÍSTICAS</a></li>
             <li><a href="../TIMES/TIMES.html">TIMES</a></li>
             <li><a href="../update.html">JOGADORES</a></li>
-            <li><a href="../update.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="#">CLASSIFICAÇÃO</a></li>
             <li><a href="../update.html">CALENDÁRIO</a></li>
             <li><a href="../update.html">RESULTADOS</a></li>
+            <li><a href="../user/sobre.html">SOBRE</a></li>
         </ul>
     </nav>
     <h1>Classificação da NBA 2022-23</h1>
