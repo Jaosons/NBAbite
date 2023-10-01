@@ -7,7 +7,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 3.5vw;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ body {
 div {
     background-color: white;
     width: 50vw;
-    height: 60vh;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,8 +26,8 @@ div {
 }
 
 h1 {
-    font-size: 1.5em;
-    margin: 20px ;
+
+    margin: 10px;
 }
 
 li {
@@ -35,7 +35,6 @@ li {
 }
 
 a {
-    font-size: 1em;
     color: blue;
     text-decoration: none;
 }
@@ -44,22 +43,12 @@ a:hover {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 100px;
-}
-@media screen and (min-width: 768px){
-    i#burguer {
-        display: none;
+@media screen and (min-width:768px){
+    div {
+        max-width: 468px;
     }
 
-    nav {
-        padding: 10px;
-    }
-    nav > ul {
-        text-align: center;
-    }
-
-    nav > ul > li {
-        display: inline-block;
+    * {
+        font-size: 38px
     }
 }
