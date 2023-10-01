@@ -4,60 +4,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../stylepasta/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../stylepasta/statstimes.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>     
-        
+        <a href="cadastro.html">CADASTRO</a> <a href="login.html">LOGIN</a> SEARCH-BAR LOGO 
     </header>
-    <nav>
-        <a href="../stats/stats.html">ESTATÍSTICAS</a>
-        <a href="../TIMES/TIMES.html">TIMES</a>
-        <a href="../players/player.html">JOGADORES</a>
-        <a href="../tabela_times/statstimes.html">CLASSIFICAÇÃO</a>
-        <a href="../calender/calender.html">CALENDÁRIO</a>
-        <a href="../result/result.html">RESULTADOS</a>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
+        <ul>
+            <li><a href="../update.html">ESTATÍSTICAS</a></li>
+            <li><a href="../TIMES/TIMES.html">TIMES</a></li>
+            <li><a href="../update.html">JOGADORES</a></li>
+            <li><a href="../update.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="../update.html">CALENDÁRIO</a></li>
+            <li><a href="../update.html">RESULTADOS</a></li>
+        </ul>
     </nav>
-    <div id="esquerdo">
-        <h1>Conferência Leste</h1><hr>
-        <ol>
-            <li><a href="../TIMES/TIMES_LESTE/Buck.html"><img src="../imagens/bucks.png" alt="Milwaukee Bucks">Milwaukee Bucks </a></li><hr>
-            <li><a href="../TIMES/TIMES_LESTE/Celtics.html"><img src="../imagens/boston.png" alt="Boston Celtics">Boston Celtics </a></li><hr>
-            <li><a href="../TIMES/TIMES_LESTE/76ers.html"><img src="../imagens/76.png" alt="Philadelphia 76ers">Philadelphia 76ers </a></li><hr>
-            <li><a href="../TIMES/TIMES_LESTE/cavaliers.html"><img src="../imagens/cavaliers.png" alt="Cleveland Cavaliers">Cleveland Cavaliers </a></li><hr>
-            <li><a href="../TIMES/TIMES_LESTE/newYorkKnicks.html"><img src="../imagens/knicks.png" alt="IMG York Knicks ">York Knicks </a></li><hr>
-            <li><img src="../imagens/nets.png"alt="IMG Brooklyn Nets ">Brooklyn Nets</li><hr>
-            <li><img src="../imagens/hawks.png" alt="IMG Atlanta Hawks ">Atlanta Hawks</li><hr>
-            <li><img src="../imagens/heat.png" alt="IMG Miami Heat ">Miami Heat</li><hr>
-            <li><img src="../imagens/bulls.png" alt="IMG Chicago Bulls ">Chicago Bulls</li><hr>
-            <li><img src="../imagens/toronto.png" alt="IMG Toronto Raptors ">Toronto Raptors</li><hr>
-            <li><img src="../imagens/pacers.png" alt="IMG Indiana Pacers ">Indiana Pacers</li><hr>
-            <li><img src="../imagens/wizards.png" alt="IMG Washington Wizards ">Washington Wizards</li><hr>
-            <li><img src="../imagens/magic.png" alt="IMG Olrando Magic ">Orlando Magic</li><hr>
-            <li><img src="../imagens/hornet.png" alt="IMG Charlotte Hornets ">  Charlotte Hornets</li><hr>
-            <li><img src="../imagens/pistons.png" alt="IMG Detroit Pistons ">Detroit Pistons</li><hr>
-        </ol>
+    <h1>Classificação da NBA 2022-23</h1>
+    <h2>Conferência Leste</h2>
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Vitórias</th>
+                    <th>Derrotas</th>
+                    <th>WR</th>
+                    <th>Pontos Feitos</th>
+                    <th>Pontos Contra</th>
+                    <th>Diferença de Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_LESTE/Buck.html"><img src="../imagens/bucks.png" alt="Milwaukee Bucks"><span class="pc-nome">Milwaukee Bucks </span><span class="mob-nome">MIL</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_LESTE/Celtics.html"><img src="../imagens/boston.png" alt="Boston Celtics"><span class="pc-nome">Boston Celtics</span><span class="mob-nome">BOS</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td><a href="../TIMES/TIMES_LESTE/76ers.html"><img src="../imagens/76.png" alt="Philadelphia 76ers"><span class="pc-nome">Philadelphia 76ers</span><span class="mob-nome">PHI</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_LESTE/cavaliers.html"><img src="../imagens/cavaliers.png" alt="Cleveland Cavaliers"><span class="pc-nome">Cleveland Cavaliers</span><span class="mob-nome">CLE</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_LESTE/newYorkKnicks.html"><img src="../imagens/knicks.png" alt="IMG York Knicks"><span class="pc-nome">York Knicks</span><span class="mob-nome">NY</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/nets.png"alt="IMG Brooklyn Nets"><span class="pc-nome">Brooklyn Nets</span><span class="mob-nome">BKN</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/hawks.png" alt="IMG Atlanta Hawks "><span class="pc-nome">Atlanta Hawks</span><span class="mob-nome">ATL</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/heat.png" alt="IMG Miami Heat"><span class="pc-nome">Miami Heat</span><span class="mob-nome">MIA</span>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/bulls.png" alt="IMG Chicago Bulls"><span class="pc-nome">Chicago Bulls</span><span class="mob-nome">CHI</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/toronto.png" alt="IMG Toronto Raptors"><span class="pc-nome">Toronto Raptors</span><span class="mob-nome">TOR</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/pacers.png" alt="IMG Indiana Pacers"><span class="pc-nome">Indiana Pacers</span><span class="mob-nome">IND</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/wizards.png" alt="IMG Washington Wizards"><span class="pc-nome">Washington Wizards</span><span class="mob-nome">WSH</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/magic.png" alt="IMG Olrando Magic"><span class="pc-nome">Orlando Magic</span><span class="mob-nome">ORL</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/hornet.png" alt="IMG Charlotte Hornets"><span class="pc-nome">Charlotte Hornets</span><span class="mob-nome">CHA</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/pistons.png" alt="IMG Detroit Pistons"><span class="pc-nome">Detroit Pisto</span><span class="mob-nome">DET</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  
-    <div id="direito">
-        <h1>Conferencia Oeste</h1><hr>
-            <ol id="2">
-               <li id="2"><a href="../TIMES/TIMES_OESTE/denver.html"><img src="../imagens/nuggets.png" alt="Denver Nuggets"> Denver Nuggets </a></li><hr>
-                <li><a href="../TIMES/TIMES_OESTE/memphis.html"><img src="../imagens/grizzles.png" alt="Memphis Grizzlies"> Memphis Grizzlies </a></li><hr>
-                <li><a href="../TIMES/TIMES_OESTE/kings.html"><img src="../imagens/kings.png" alt="Sacramento Kings"> Sacramento Kings </a></li><hr>
-                <li><a href="../TIMES/TIMES_OESTE/suns.html"><img src="../imagens/spurs.png" alt="Phoenix Suns"> Phoenix Suns </a></li><hr>
-                <li><a href="../TIMES/TIMES_OESTE/clippers.html"><img src="../imagens/clippers.png" alt="LA CLIPERS"> LA CLIPERS</a></li><hr>
-                <li><img src="../imagens/warrios.png" alt="Golden State Warriors">Golden State Warriors</li><hr>
-                <li><img src="../imagens/lakers.png" alt="Los Angeles Lakers">Los Angeles Lakers</li><hr>
-                <li><img src="../imagens/timberwolves.png" alt="Minnesota Timberwolves">Minnesota Timberwolves</li><hr>
-                <li><img src="../imagens/thunder.png" alt="Oklahoma City Thunder">Oklahoma City Thunder</li><hr>
-                <li><img src="../imagens/pelicans.png" alt="New Orleans Pelicans">New Orleans Pelicans</li><hr>
-                <li><img src="../imagens/dallas.png" alt="Dallas Mavericks">Dallas Mavericks</li><hr>
-                <li><img src="../imagens/jazz.png" alt="Utah Jazz">Utah Jazz</li><hr>
-                <li><img src="../imagens/blazers.png" alt="Portland Trail Blazers">Portland Trail Blazers</li><hr>
-                <li><img src="../imagens/rockets.png" alt="Houston Rockets">Houston Rockets</li><hr>
-                <li><img src="../imagens/spurs.png" alt="San Antonio Spur">San Antonio Spurs</li><hr>
-            </ol>
+    <h2>Conferência Oeste</h2>
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Vitórias</th>
+                    <th>Derrotas</th>
+                    <th>WR</th>
+                    <th>Pontos Feitos</th>
+                    <th>Pontos Contra</th>
+                    <th>Diferença de Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_OESTE/denver.html"><img src="../imagens/nuggets.png" alt="Denver Nuggets"><span class="pc-nome">Denver Nuggets</span><span class="mob-nome">DEN</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_OESTE/memphis.html"><img src="../imagens/grizzles.png" alt="Memphis Grizzlies"><span class="pc-nome">Memphis Grizzlies</span><span class="mob-nome">MEM</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_OESTE/kings.html"><img src="../imagens/kings.png" alt="Sacramento Kings"><span class="pc-nome">Sacramento Kings</span><span class="mob-nome">SAC</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_OESTE/suns.html"><img src="../imagens/suns.png" alt="Phoenix Suns"><span class="pc-nome">Phoenix Suns</span><span class="mob-nome">PHX</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><a href="../TIMES/TIMES_OESTE/clippers.html"><img src="../imagens/clippers.png" alt="LA CLIPERS"><span class="pc-nome">LA CLIPERS</span><span class="mob-nome">LAC</span></a></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/warrios.png" alt="Golden State Warriors"><span class="pc-nome">Golden State Warriors</span><span class="mob-nome">GS</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/lakers.png" alt="Los Angeles Lakers"><span class="pc-nome">Los Angeles Lakers</span><span class="mob-nome">LAL</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/thunder.png" alt="Oklahoma City Thunder"><span class="pc-nome">Oklahoma City Thunder</span><span class="mob-nome">MIN</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/pelicans.png" alt="New Orleans Pelicans"><span class="pc-nome">New Orleans Pelicans</span><span class="mob-nome">NO</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/dallas.png" alt="Dallas Mavericks"><span class="pc-nome">Dallas Mavericks</span><span class="mob-nome">DAL</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/jazz.png" alt="Utah Jazz"><span class="pc-nome">Utah Jazz</span><span class="mob-nome">UTAH</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/blazers.png" alt="Portland Trail Blazers"><span class="pc-nome">Portland Trail Blazers</span><span class="mob-nome">POR</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/rockets.png" alt="Houston Rockets"><span class="pc-nome">Houston Rockets</span><span class="mob-nome">HOU</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+                <tr>
+                    <td class="time"><img src="../imagens/spurs.png" alt="San Antonio Spur"><span class="pc-nome">San Antonio Spurs</span><span class="mob-nome">SA</span></td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>XX%</td>
+                    <td>XX</td>
+                    <td>XX</td>
+                    <td>+XX</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <script src="../script/script.js"></script>
 </body>
-</html>>
+</html>

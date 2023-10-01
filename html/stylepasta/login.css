@@ -1,35 +1,65 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #1a3151;
+    --cor2: #f4a51d;
+    --cor3: #ffdb9e;
+    font-size: 1.3em;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: var(--cor2);
+    padding: 5% 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 15px;
+}
+
 form {
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  input[type="submit"] {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000;
-    cursor: pointer;
-  }
-  
-  h1 {
+    background-color: var(--cor3);
+    width: 30vw;
+    padding-bottom: 4%;
     text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  a{
-    text-decoration: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 20vw;
+    height: 5vh;
+    margin: 0.5vh 0px;
+    font-size: 1.3em;
+}
+
+select {
+    width: 20vw;
+    height: 5vh;
+    margin: 0.5vh 0px;
+}
+button {
+    width: 20vw;
+    height: 5vh;
+    margin: 0.5vh 0px;
+}
+
+a {
+    text-decoration: none;
     color: black;
-   
-  }
+}
+
+a:visited {
+    color: black;
+}

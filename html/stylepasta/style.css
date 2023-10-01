@@ -12,11 +12,9 @@ body,hmtl {
 header {
     min-width: 100%;
     height: 10vh;
-    background-color: blue;
 }
 
 i {
-    background-color: blueviolet;
     min-width: 100%;
     text-align: center;
     padding-bottom: 4px;
@@ -24,7 +22,6 @@ i {
 }
 
 nav {
-    background-color: aqua;
     padding-bottom: 4px;
 }
 
@@ -38,11 +35,9 @@ nav li {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 aside#calendario {
-    background-color: gray;
     display: flex;
     position: center;
     width: 100vw;
@@ -52,19 +47,13 @@ aside#calendario {
 aside#calendario > h1 {
     display: none;
 }
-aside#calendario > table {
-    background-color: lightgray;
-
-}
 
 article {
-    background-color: green;
     margin: 10px
 }
 
 div.noticia {
     text-align: center;
-    background-color: darkgreen;
     padding-top: 12px;
     margin: 5px 0px;
 }
@@ -115,15 +104,10 @@ aside#classificação td  {
 }
 
 footer {
-    background-color: brown;
     text-align: center;
 }
 
 @media screen and (min-width: 768px){
-    body {
-        background-color: purple;
-    }
-
     i#burguer {
         display: none;
     }

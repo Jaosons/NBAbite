@@ -1,17 +1,30 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #1a3151;
+    --cor2: #f4a51d;
+    --cor3: #ffdb9e;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    background-color: rgb(37, 217, 178);
+    background-color: var(--cor2);
     padding: 5% 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: 15px;
 }
 
 form {
-    background-color: gray;
+    background-color: var(--cor3);
     width: 30vw;
     padding-bottom: 4%;
     text-align: center;
@@ -29,10 +42,6 @@ input {
     margin: 0.5vh 0px;
 }
 
-input#name {
-    margin-top: 4%;
-}
-
 select {
     width: 20vw;
     height: 5vh;
@@ -42,6 +51,7 @@ button {
     width: 20vw;
     height: 5vh;
     margin: 0.5vh 0px;
+    cursor: pointer;
 }
 
 a {
