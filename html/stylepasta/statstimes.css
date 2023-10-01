@@ -17,6 +17,15 @@ body,hmtl {
     overflow-x: hidden;
     background-color: var(--cor5);
 }
+.verde{
+    color: #094;
+}
+.verm{
+    color: red
+}
+.laranja{
+    color: orange;
+}
 
 header {
     min-width: 100%;
@@ -70,6 +79,7 @@ i {
     text-align: center;
     padding-bottom: 4px;
     cursor: pointer;
+    background-color: var(--cor1);
 }
 
 nav {
@@ -150,20 +160,18 @@ span.pc-nome {
     i#burguer {
         display: none;
     }
-    
-    nav {
+     nav {
         padding: 10px;
+        background-color: var(--cor1)
     }
 
     nav > ul {
         text-align: center;
     }
-
-    nav > ul > li {
+     nav > ul > li {
         display: inline-block;
-    }
-
-    h1 {
+     }
+      h1 {
         text-align: center;
         margin-top: 20px;
     }
