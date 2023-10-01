@@ -33,6 +33,9 @@ header {
     background-color: var(--cor2);
     display: flex;
 }
+header a:visited{
+    color:  black;
+}
 
 div#logo {
     flex: 1;
@@ -143,6 +146,13 @@ td {
     text-align: center;
     padding: 0 5px;
     white-space: nowrap;
+    
+}
+td a{
+    color:black;
+}
+td a:visited{
+    color:black;
 }
 
 td.time {

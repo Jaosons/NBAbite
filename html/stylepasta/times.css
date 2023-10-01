@@ -11,6 +11,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    
 }
 
 body,hmtl {
@@ -23,6 +24,7 @@ header {
     height: 10vh;
     background-color: var(--cor2);
     display: flex;
+    
 }
 
 div#logo {
@@ -79,20 +81,26 @@ nav {
 
 nav ul {
     text-align: center;
+    
     }
 
 nav li {
     margin-bottom: 5px;
     padding: 0px 10px;
     font-size: 1em;
+    
 }
 
 nav a{
     color: white;
     text-decoration: none;
+
 }
 a {
     text-decoration: none;
+}
+header a:visited{
+    color: black;
 }
 div#container {
     display: flex;
@@ -103,7 +111,9 @@ div#container {
     align-items: flex-start;
     height: 100%;
 }
-
+div#container a{
+    color:black;
+}
 div#container > div {
     flex-basis: calc(50% - 10px);
     max-width: calc(50% - 10px);
