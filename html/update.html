@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manutenção</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stylepasta/update.css">
 </head>
-<body>
-    <div>
-        <h1>Esta página está em manutenção!</h1>
-        <p>
-            Você pode ver nossas outras páginas
-        </p>
+<body onresize="mudouTamanho()">
+    <header>   
+        <div id="logo">
+            <a href="#"><img src="img-not/NBAbite-Logo.png" alt="" id="logo-site"></a>
+        </div>
+        <div id="search-bar">
+            <span>Barra de pesquisa</span>
+        </div> 
+        <div id="user">
+            <span><a href="./html/user/cadastro.html">CADASTRO</a><br></spam>
+            <span><a href="./html/user/login.html">LOGIN</a></spam>  
+        </div>
+    </header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
         <ul>
-            <li><a href="../index.html">Menu</a></li>
-            <li><a href="TIMES/TIMES.html">Times</a></li>
-            <li><a href="tabela_times/statstimes.html">Classificação</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">ESTATÍSTICAS</a></li>
+            <li><a href="./html/TIMES/TIMES.html">TIMES</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">JOGADORES</a></li>
+            <li><a href="./html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">CALENDÁRIO</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">RESULTADOS</a></li>
+            <li><a href="./html/user/sobre.html">SOBRE</a></li>
         </ul>
-        <p>
-            Caso queira se cadastrar em nosso site para receber atualizações e notícias você pode clicar neste link <a href="user/cadastro.html">CADASTRE-SE</a>
-        </p>
-        <p>
-            Caso você ja tenha se cadastrado pode fazer login clicando <a href="user/login.html">aqui</a>
-        </p>
-        <a id="sobre" href="user/sobre.html">SOBRE NÓS</a>
+    </nav>
+    <div>
+        Este site está indisponível no momento
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>

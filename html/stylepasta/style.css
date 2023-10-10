@@ -31,6 +31,7 @@ div#logo {
 #logo-site {
     width: 20vw;
     margin-left: 20px;
+    min-width: 153px;
 }
 
 div#user {
@@ -104,7 +105,7 @@ aside#calendario {
     overflow-x: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0.5px 0.5px 20px black;
+    box-shadow: 0.5px 0.5px 10px black;
 }
 
 article {
@@ -217,7 +218,7 @@ footer {
         overflow: hidden;
         height: auto;
         border-collapse: collapse;
-        padding: 10px
+        padding: 10px;
     }
 
     #calendario > table td {
@@ -233,12 +234,13 @@ footer {
     #classificação {
         flex: 1;
         background-color: rgba(0, 0, 0, 0.064);
-        height: 30vh;
-        max-height: 430px;
+        height: 31vh;
+        white-space: nowrap;
     }
 
     #classificação > table {
         padding: 10px;
+        height: 10vh;
     }
 }
 

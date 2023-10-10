@@ -14,4 +14,6 @@ function clickMenu(){
     }
 }
 
-function Submit () {}
+function NaoDisponivel () {
+    alert("Está página não está disponível");
+}
