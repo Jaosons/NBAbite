@@ -14,6 +14,8 @@
 
 body,hmtl {
     overflow-x: hidden;
+    background-image: url("https://cdn.nba.com/manage/2020/10/GettyImages-1138217303-784x523.jpg");
+    background-repeat: no-repeat;
 }
 
 header {
@@ -96,6 +98,7 @@ a {
 
 section {
     background-color: rgba(0, 0, 0, 0.086);
+     
 }
 
 aside#calendario {
@@ -106,17 +109,21 @@ aside#calendario {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0.5px 0.5px 10px black;
+    background-color: rgb(255, 255, 255, 0.777);
 }
 
 article {
     margin: 10px;
     border-radius: 10px;
+    
 }
 
 div.noticia {
     text-align: center;
     padding-top: 12px;
     margin: 5px 0px;
+    background-color: rgba(255, 255, 255, 0.616);
+    
 }
 
 img.image-not {
@@ -142,10 +149,12 @@ aside#classificação {
     text-align: center;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
+    background-color: rgba(255, 255, 255, 0.777);
 }
 
 aside#classificação > h1 {
     font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.777);
 }
 
 aside#classificação > table {
@@ -154,10 +163,13 @@ aside#classificação > table {
     margin: auto;
     padding: 0px 5px;
     border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.777);
+    
 }
 
 aside#classificação th {
     font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 0.777);
 }
 aside#classificação td  {
     text-align: left;
@@ -165,6 +177,7 @@ aside#classificação td  {
     font-size: 1.2em;
     width: 48vmin;
     padding: 1%;
+    background-color: rgba(255, 255, 255, 0.777);
 }
 
 footer {
@@ -173,7 +186,7 @@ footer {
 
 @media screen and (min-width: 768px){
     body {
-       background-color: rgba(255, 255, 255, 0.616);
+       background-color: rgba(255, 255, 255, 0.777);
     }
 
     #logo-site {
