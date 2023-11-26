@@ -8,7 +8,7 @@ https://wireframepro.mockflow.com/view/MmUpbWRJIpb
 * <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 * <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 * <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-* SQL src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png">
+* SQL 
 ## Conteúdos do site: 
 * A classficao da região Oeste e regiao Leste da NBA (temporodada 2022-23);
 * Calendario da antiga temporada 2022-23;
