@@ -33,8 +33,9 @@ div#logo {
 }
 
 #logo-site {
-    width: 10vw;
+    width: 20vw;
     margin-left: 20px;
+    min-width: 153px;
 }
 
 div#user {
@@ -101,7 +102,7 @@ div#conteudo {
     width: calc(70% - 10px);
     max-width: 546px;
     min-width: 409px;
-    height: 200px;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -114,8 +115,25 @@ div#conteudo {
 p {
     font-size: 1.3em;
 }
+.material-symbols-outlined{
+    background-color: rgb(0, 0, 0,0);
+    color: black;
+    min-width: 0;
+}
+#emailsim{
+    height: 20px;
+    width: 20px;
+   }
+   
+   #insta{
+    height: 20px;
+    width: 20px;
+   }
 
 @media screen and (min-width:768px){
+   #logo-site {
+        width: 10vw;
+    }
     i#burguer {
         display: none;
     }
@@ -130,17 +148,13 @@ p {
     nav > ul > li {
         display: inline-block;
     }
-   #emailsim{
-    height: 20px;
-    width: 20px;
-   }
-   
-   #insta{
-    height: 20px;
-    width: 20px;
-   }
+  
    a{
     text-decoration: none;
     color: black;
    }
+   div#conteudo{
+    background-size: contain;
+    
+}
 }

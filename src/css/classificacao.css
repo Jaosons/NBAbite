@@ -46,8 +46,9 @@ div#logo {
 }
 
 #logo-site {
-    width: 10vw;
+    width: 20vw;
     margin-left: 20px;
+    min-width: 153px;
 }
 
 div#user {
@@ -153,6 +154,11 @@ span.pc-nome {
     display: none;
 }
 @media screen and (min-width:768px){
+   
+    #logo-site {
+        width: 10vw;
+    }
+    
     i#burguer {
         display: none;
     }
