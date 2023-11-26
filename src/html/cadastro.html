@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
-    <link rel="stylesheet" href="../stylepasta/forms.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
+    <header>   
+        <div id="logo">
+            <a href="index.html"><img src="../images/logos/NBAbite-Logo.png" alt="" id="logo-site"></a>
+        </div>
+        
+        <div id="user">
+            <span><a href="cadastro.html">CADASTRO</a><br></span>
+            <span><a href="usuarios.html">USUARIOS</a></span> 
+        </div>
+    </header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
+        <ul>
+            <li><a href="index.html">NOTÍCIAS</a></li>
+            <li><a href="times.html">TIMES</a></li>
+            <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">CALENDÁRIO</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">JOGADORES</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">RESULTADOS</a></li>            
+        </ul>
+    </nav>
     <form method="post" id="create">
         <h1>Cadastro</h1>
         <label for="nome" id="name" >Nome: </label><br>
@@ -71,6 +94,7 @@
         <button type="button" onclick="create()">Cadastrar</button>
         <a href="../../index.html"><button type="button">Cancelar</button></a>
     </form>
-    <script src="../script/api.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/api.js"></script>
 </body>
 </html>

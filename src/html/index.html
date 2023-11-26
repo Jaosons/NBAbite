@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="html/stylepasta/style.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body onresize="mudouTamanho()">
     <header>   
         <div id="logo">
-            <a href="#"><img src="./html/img-not/NBAbite-Logo.png" alt="" id="logo-site"></a>
+            <a href="#"><img src="../images/logos/NBAbite-Logo.png" alt="" id="logo-site"></a>
         </div>
         
         <div id="user">
-            <span><a href="./html/user/cadastro.html">CADASTRO</a><br></span>
-            <span><a href="../../usuarios.html">USUARIOS</a></span> 
+            <span><a href="../html/cadastro.html">CADASTRO</a><br></span>
+            <span><a href="../html/usuarios.html">USUARIOS</a></span> 
         </div>
     </header>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <nav id="itens"> 
         <ul>
-            <li><a href="#" onclick="NaoDisponivel()">ESTATÍSTICAS</a></li>
-            <li><a href="./html/TIMES/TIMES.html">TIMES</a></li>
-            <li><a a href="#" onclick="NaoDisponivel()">JOGADORES</a></li>
-            <li><a href="./html/tabela_times/statstimes.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="index.html">NOTÍCIAS</a></li>
+            <li><a href="times.html">TIMES</a></li>
+            <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
             <li><a href="#" onclick="NaoDisponivel()">CALENDÁRIO</a></li>
-            <li><a href="#" onclick="NaoDisponivel()">RESULTADOS</a></li>
-            <li><a href="./html/user/sobre.html">SOBRE</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">JOGADORES</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">RESULTADOS</a></li>            
         </ul>
     </nav>
     <section>
@@ -41,7 +41,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="#" alt=""><a href="#">Dallas</a> X <a href="#">Minnesota</a></td>
+                        <td>Dallas X Minnesota</td>
                         <td>05/10</td>
                         <td>13:00</td>
                     </tr>
@@ -55,7 +55,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="#" alt=""><a href="#">Minnesota</a> X <a href="#">Dallas</a></td>
+                        <td>Minnesota X Dallas</td>
                         <td>07/10</td>
                         <td>13:00</td>
                     </tr>
@@ -69,7 +69,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="#" alt=""><a href="#">Los angeles</a> X <a href="#">Golden State</a></td>
+                        <td>Los angeles X Golden State</td>
                         <td>07/10</td>
                         <td>21:30</td>
                     </tr>
@@ -83,7 +83,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="#" alt=""><a href="#">Chicago</a> X <a href="#">Milwaukee</a></td>
+                        <td>Chicago X Milwaukee</a></td>
                         <td>08/10</td>
                         <td>14:00</td>
                     </tr>
@@ -93,31 +93,30 @@
         <article>
             <div class="noticia">
                 <a href="https://jumperbrasil.lance.com.br/damian-lillard-nunca-juntaria-golden-state-warriors/" target="_blank">
-                    <img src="./html/img-not/Damian-Lillard-e-Stephen-Curry.png" alt="foto-noticia" class="image-not"><br>
-                    <img src="./html/img-not/logo.png" alt="JumperBrasil" class="logo-not">
-                    <h1> Damian Lillard diz que nunca se juntaria ao Golden State Warriors</h1>
+                    <img src="../images/news/Damian-Lillard-e-Stephen-Curry.png" alt="foto-noticia" class="image-not"><br>
+                    <img src="../images/logos/logo_jumper.png" alt="JumperBrasil" class="logo-not">
+                    <h1>Damian Lillard diz que nunca se juntaria ao Golden State Warriors</h1>
                 </a>
             </div>
             <div class="noticia">
                     <a href="https://www.espn.com.br/nba/artigo/_/id/12650146/megatroca-nba-manda-lillard-para-bucks-mexe-astros-tres-times">
-                    <img src="./html/img-not/i.jpg" alt="" class="image-not"><br>
+                    <img src="../images/news/Lilliard-para-os-Bucks.jpg" alt="foto-noticia" class="image-not"><br>
                     <img src="https://logodownload.org/wp-content/uploads/2015/05/espn-logo-4-1.png" alt="" class="logo-not">
                     <h1>Megatroca na NBA manda Lillard para os Bucks e mexe em astros de três times</h1>
                     </a>
             </div>
             <div class="noticia">
                 <a href="https://lakersbrasil.com/site/noticias/2023/09/nba_lakers_tem_otimas_noticias_em_relacao_a_lebron_james/">
-                <img class="image-not" src="./html/img-not/lebron-james-nba-recorde.png" alt=""><br> 
-                <img class="logo-not" src="./html/img-not/logo-labr.png" alt=""><br>
+                <img class="image-not" src="../images/news/lebron-james-nba-recorde.png" alt=""><br> 
+                <img class="logo-not" src="../images/logos/logo-labr.png" alt=""><br>
                 <h1>Lakers tem ótimas notícias em relação a LeBron James</h1>
                 </a>
             </div>
             <div class="noticia">
                 <a href="">
-                    <img class="image-not" src="./html/img-not/nba-magic-johnson-se-compara-stephen-curry-e-crava-quem-e-melhor_widemd.png" alt="">
-                    <img class="logo-not" src="./html/img-not/logo_sportbuzz.png" alt="">
-                    <h1>Magic Johnson se compara a Stephen Curry e crava quem é melhor
-                    </h1>
+                    <img class="image-not" src="../images/news/nba-magic-johnson-se-compara-stephen-curry-e-crava-quem-e-melhor_widemd.png" alt="">
+                    <img class="logo-not" src="../images/logos/logo_sportbuzz.png" alt="">
+                    <h1>Magic Johnson se compara a Stephen Curry e crava quem é melhor</h1>
                 </a>
             </div>
         </article>
@@ -131,33 +130,33 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#"></a>1. Denver Nuggets</td>
-                        <td><a href="#">1. Milwaukee Bucks</a></td>
+                        <td>1. Denver Nuggets</td>
+                        <td>1. Milwaukee Bucks</td>
                     </tr>
                     <tr>
-                        <td><a href="#"></a>2. Memphis Grizzlies</td>
-                        <td><a href="#">2. Boston Celtics</a></td>
+                        <td>2. Memphis Grizzlies</td>
+                        <td>2. Boston Celtics</td>
                     </tr>
                     <tr>
-                        <td><a href="#">3. Sacramento Kings</a></td>
-                        <td><a href="#"></a>3. Philadelphia 76ears</td>
+                        <td>3. Sacramento Kings</td>
+                        <td>3. Philadelphia 76ears</td>
                     </tr>
                     <tr>
-                        <td><a href="#">4. Phoenix Suns</a></td>
-                        <td><a href="#"></a>4. Cleveland Cavaliers</td>
+                        <td>4. Phoenix Suns</td>
+                        <td>4. Cleveland Cavaliers</td>
                     </tr>
                     <tr>
-                        <td><a href="#">5. LA Clippers</a></td>
-                        <td><a href="#">5. New York Knicks</a></td>
+                        <td>5. LA Clippers</td>
+                        <td>5. New York Knicks</td>
                     </tr>
                     <tr>
-                        <td><a href="#">6. Golden State Warriors</a></td>
-                        <td><a href="#">6. Brooklyn Nets</a></td>
+                        <td>6. Golden State Warriors</td>
+                        <td>6. Brooklyn Nets</td>
                     </tr>
                 </tbody>
             </table>
         </aside>
     </section>
-    <script src="./html/script/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

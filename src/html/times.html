@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/times.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>   
+        <div id="logo">
+            <a href="index.html"><img src="../images/logos/NBAbite-Logo.png" alt="" id="logo-site"></a>    
+        </div>
+        
+        <div id="user">
+            <span><a href="cadastro.html">CADASTRO</a><br></span>
+            <span><a href="usuarios.html">USUARIOS</a></span> 
+        </div>
+    </header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens"> 
+        <ul>
+            <li><a href="index.html">NOTÍCIAS</a></li>
+            <li><a href="times.html">TIMES</a></li>
+            <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">CALENDÁRIO</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">JOGADORES</a></li>
+            <li><a href="#" onclick="NaoDisponivel()">RESULTADOS</a></li>            
+        </ul>
+    </nav>
+    <div id="container">
+        <div>
+            <h1>ATLÂNTICO</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/boston.png" alt="Boston Celtics">Boston Celtics</li>
+                <li><img class="img-time"src="../images/logos/teams/nets.png" alt="">Brooklyn Nets</li>
+                <li><img class="img-time"src="../images/logos/teams/knicks.png" alt="">New York Knicks</li>
+                <li><img class="img-time"src="../images/logos/teams/76.png" alt="">Philadelphia 76ers</li>
+                <li><img class="img-time"src="../images/logos/teams/toronto.png" alt="">Toronto Raptors</li>
+            </ul>
+        </div>
+        <div>
+            <h1>PACÍFICO</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/warrios.png" alt=""> Golden State Warriors </li>
+                <li><img class="img-time"src="../images/logos/teams/clippers.png" alt="">LA Clippers</li>
+                <li><img class="img-time"src="../images/logos/teams/lakers.png" alt="">Los Angeles Lakers</li>
+                <li><img class="img-time"src="../images/logos/teams/suns.png" alt="">Phoenix Suns</li>
+                <li><img class="img-time"src="../images/logos/teams/kings.png" alt="">Sacramento Kings</li>
+            </ul>
+        </div>
+        <div>
+            <h1>CENTRAL</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/bulls.png" alt="">Chicago Bulls</li>
+                <li><img class="img-time"src="../images/logos/teams/cavaliers.png" alt="">Cleveland Cavaliers</li>
+                <li><img class="img-time"src="../images/logos/teams/pistons.png" alt="">Detroit Pistons</li>
+                <li><img class="img-time"src="../images/logos/teams/pacers.png" alt="">Indiana Pacers</li>
+                <li><img class="img-time"src="../images/logos/teams/bucks.png" alt="">Milwaukee Bucks</li>
+            </ul>
+        </div>
+        <div>
+            <h1>NOROESTE</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/nuggets.png" alt="">Denver Nuggets</li>
+                <li><img class="img-time"src="../images/logos/teams/timberwolves.png" alt="">Minnesota Timberwolves</li>
+                <li><img class="img-time"src="../images/logos/teams/thunder.png" alt="">Oklahoma City Thunder</li>
+                <li><img class="img-time"src="../images/logos/teams/blazers.png" alt="">Portland Trail Blazers</li>
+                <li><img class="img-time"src="../images/logos/teams/jazz.png" alt="">Utah Jazz</li>
+            </ul>
+        </div>
+        <div>
+            <h1>SUDESTE</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/hawks.png" alt="">Atlanta Hawks</li>
+                <li><img class="img-time"src="../images/logos/teams/hornet.png" alt="">Charlotte Hornets</li>
+                <li><img class="img-time"src="../images/logos/teams/heat.png" alt="">Miami Heat</li>
+                <li><img class="img-time"src="../images/logos/teams/magic.png" alt="">Orlando Magic</li>
+                <li><img class="img-time"src="../images/logos/teams/wizards.png" alt="">Washington Wizards</li>
+            </ul>
+        </div>
+        <div>
+            <h1>SUDOESTE</h1>
+            <ul>
+                <li><img class="img-time"src="../images/logos/teams/dallas.png" alt="">Dallas Mavericks</li>
+                <li><img class="img-time"src="../images/logos/teams/rockets.png" alt="">Houston Rockets</li>
+                <li><img class="img-time"src="../images/logos/teams/grizzles.png" alt="">Memphis Grizzlies</li>
+                <li><img class="img-time"src="../images/logos/teams/pelicans.png" alt="">New Orleans Pelicans</li>
+                <li><img class="img-time"src="../images/logos/teams/spurs.png" alt="">San Antonio Spurs</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
