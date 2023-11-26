@@ -16,7 +16,9 @@ body,hmtl {
     overflow-x: hidden;
     background-image: url("https://cdn.nba.com/manage/2020/10/GettyImages-1138217303-784x523.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 header {
     min-width: 100%;
