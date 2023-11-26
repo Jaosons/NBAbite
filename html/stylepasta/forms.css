@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: var(--cor1);
+    overflow-x: hidden;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230711/pngtree-3d-render-of-a-sport-arena-with-basketball-court-background-image_3840849.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 * {

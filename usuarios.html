@@ -14,8 +14,8 @@
         </div>
         
         <div id="user">
-            <span><a href="../user/cadastro.html">CADASTRO</a><br></spam>
-            <span><a href="../user/login.html">LOGIN</a></spam>  
+            <span><a href="../user/cadastro.html">CADASTRO</a><br></span>
+            <span><a href="../user/login.html">LOGIN</a></span>  
         </div>
     </header>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -30,84 +30,83 @@
             <li><a href="../user/sobre.html">SOBRE</a></li>
         </ul>
     </nav>
-    <div id="div_lista">
-        <h1>LISTA</h1>
-        <section id="lista">
-
-        </section>
-        <button type="button" onclick="read()"></button>
+    <div id="container">
+        <div id="div_lista">
+            <h1>LISTA DE USUARIOS</h1>
+            <section id="lista">
+            </section>
+            <button type="button" onclick="read()">Gerar lista</button>
+        </div>
+        <div id="edit">
+            <h1>EDITAR / EXCLUIR</h1>
+            <form id="update">
+                <label for="idUsuario">ID: </label><br>
+                <input type="number" name="idUsuario" id="idUsuario" placeholder="Digite o ID" required><br>
+                <label for="novoNome">Nome: </label><br>
+                <input type="text" name="novoNome" placeholder="Digite o Nome"><br>
+                <label for="novoSobrenome">Sobrenome: </label><br>
+                <input type="text" name="novoSobrenome" placeholder="Digite o sobrenome"><br>
+                <label for="novoNascimento">Data de nascimento: </label><br>
+                <input id ="forms" type="date" name="novoNascimento" ><br>
+                <label for="novoCpf">CPF: </label><br>
+                <input type="text" name="novoCpf" id="" placeholder="Digite o CPF"><br>
+                <label for="novoEmail">E-mail: </label><br>
+                <input type="email" name="novoEmail" placeholder="Digite o email"><br>
+                <label for="novaSenha">Senha: </label><br>
+                <input type="password" name="novaSenha" placeholder="Digite a senha" autocomplete="on"><br>
+                <label for="novoGenero">Qual o gênero: </label><br>
+                <select name="novoGenero" id="ge">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outros</option>
+                </select><br>
+                <label for="novoEstado">Estado</label><br>
+                <select name="novoEstado" id="est">
+                    <option value="" selected>Escolha o Estado</option>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </optgroup>
+                </select>
+                <button type="button" onclick="update()">Editar</button>
+                <button type="button" onclick="delet()">Deletar</button></a>
+            </form>
+        </div>
     </div>
-
-    <div id="edit">
-        <h1>EDITAR / EXCLUIR</h1>
-        <form id="update">
-            <h1>Cadastro</h1>
-            <label for="id">Id: </label><br>
-            <input type="number" name="idUsuario" id="idUsuario" placeholder="Digite o ID" required><br> 
-            <label for="novoNome">Nome: </label><br>
-            <input type="text" name="novoNome" placeholder="Digite o Nome"><br>
-            <label for="novoSobrenome">Sobrenome: </label><br>
-            <input type="text" name="novoSobrenome" placeholder="Digite o sobrenome"><br>
-            <label for="novoNascimento">Data de nascimento: </label><br>
-            <input id ="forms" type="date" name="novoNascimento" ><br>
-            <label for="novoCpf">CPF: </label><br>
-            <input type="text" name="novoCpf" id="" placeholder="Digite o CPF"><br>
-            <label for="novoEmail">E-mail: </label><br>
-            <input type="email" name="novoEmail" placeholder="Digite o email"><br>
-            <label for="novaSenha">Senha: </label><br>
-            <input type="password" name="novaSenha" placeholder="Digite a senha" autocomplete="on"><br>
-            <label for="novoGenero">Qual o gênero: </label><br>
-            <select name="novoGenero" id="ge">
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-                <option value="O">Outros</option>
-            </select><br>
-            <label for="novoEstado">Estado</label><br>
-            <select name="novoEstado" id="est">
-                <option value="" selected>Escolha o Estado</option>
-                <optgroup label="Sudeste">
-                    <option value="SP">São Paulo</option>
-                    <option value="RJ">Rio de Janeiro (RJ)</option>
-                    <option value="ES">Espírito Santo (ES)</option>
-                    <option value="MG">Minas Gerais (MG)</option>
-                </optgroup>
-                <optgroup label="Sul">
-                    <option value="PR">Paraná (PR)</option>
-                    <option value="RS">Rio Grande do Sul (RS)</option>
-                    <option value="SC">Santa Catarina (SC)</option>
-                </optgroup>
-                <optgroup label="Centro-Oeste">
-                    <option value="DF">Distrito Federal (DF)</option>
-                    <option value="GO">Goiás (GO)</option>
-                    <option value="MT">Mato Grosso (MT)</option>
-                    <option value="MS">Mato Grosso do Sul (MS)</option>
-                </optgroup>
-                <optgroup label="Nordeste">
-                    <option value="AL">Alagoas (AL)</option>
-                    <option value="BA">Bahia (BA)</option>
-                    <option value="CE">Ceará (CE)</option>
-                    <option value="MA">Maranhão (MA)</option>
-                    <option value="PB">Paraíba (PB)</option>
-                    <option value="PE">Pernambuco (PE)</option>
-                    <option value="PI">Piauí (PI)</option>
-                    <option value="RN">Rio Grande do Norte (RN)</option>
-                    <option value="SE">Sergipe (SE)</option>
-                </optgroup>
-                <optgroup label="Norte">
-                    <option value="AC">Acre (AC)</option>
-                    <option value="AP">Amapá (AP)</option>
-                    <option value="AM">Amazonas (AM)</option>
-                    <option value="PA">Pará (PA)</option>
-                    <option value="RO">Rondônia (RO)</option>
-                    <option value="RR">Roraima (RR)</option>
-                    <option value="TO">Tocantins (TO)</option>
-                </optgroup>
-            </select>
-            <button type="button" onclick="update()">Editar</button>
-            <button type="button" onclick="delet()">Deletar</button></a>
-        </form>
     </body>
-    </div>
     <script src="html/script/api.js"></script>
     <script src="html/script/script.js"></script>
 </body>

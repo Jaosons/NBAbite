@@ -16,7 +16,10 @@
 
 body,hmtl {
     overflow-x: hidden;
-    background-color: rgba(0, 0, 0, 0.157);
+    background-image: url("https://www.hoopsbasket.com/cdn/shop/articles/map.jpg?v=1619532252");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -121,6 +124,7 @@ div#container > div {
     box-sizing: border-box;
     padding: 10px;
     margin: 2px;
+    background-color: #ffffff9b;
 }
 
 li {

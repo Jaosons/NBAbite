@@ -16,7 +16,10 @@
 
 body,hmtl {
     overflow-x: hidden;
-    background-color: rgba(0, 0, 0, 0.157);
+    background-image: url("https://lh3.googleusercontent.com/9iUUh_3xtubw1wD64AKEDxjfgguCCEO_d-VgEKl-7KW1XHCnyWZ4vjSMDgl2KtjKt1vONeLBZG5o=w1440-ns-nd-rj");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -66,10 +69,6 @@ button:hover {
     background-color: #cacaca;
 }
 
-#div_lista, #edit > h1{
-    text-align: center;
-} 
-
 div#logo {
     flex: 1;
 
@@ -89,24 +88,6 @@ div#user > span {
     width: 100px;
     height: 100px;
     font-size: 1.4em;
-}
-
-div#search-bar {
-    flex: 1;
-}
-
-div#search-bar > span {
-    display: block;
-    background-color: white;
-    width: 100%;
-    height: 40%;
-    text-align: center;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-div#search-bar > span > a {
-    font-size: 1.3em;
 }
 
 i {
@@ -145,31 +126,50 @@ a {
 header a:visited{
     color: black;
 }
-div#container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-}
-div#container a{
-    color:black;
-}
-div#container > div {
-    flex-basis: calc(50% - 10px);
-    max-width: calc(50% - 10px);
-    min-width: 224px;
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 2px;
-}
 
 li {
     list-style: none;
 }
 
+div#div_lista {
+    width: 100vw;
+    overflow-x: auto;
+    text-align: center;
+    margin: 5px;
+}
+
+#div_lista, #edit {
+    text-align: center;
+    box-sizing: border-box;
+} 
+table {
+    border-collapse: collapse;
+    white-space: nowrap;
+    background-color: white;
+}
+
+thead {
+    background-color: var(--cor4);
+    border: 1px solid black;
+}
+
+th {
+    padding: 10px
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0 5px;
+    white-space: nowrap;
+    
+}
+
+form {
+    padding: auto;
+    position: absolute;
+    left: 15%;
+}
 
 @media screen and (min-width: 768px){
     i#burguer {
@@ -188,48 +188,37 @@ li {
     }
 
     div#container {
-        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     div#container div{
-        flex-basis: calc(33% - 10px);
-        font-size: 1.6em;
+        flex-basis: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        min-width: 224px;
+        box-sizing: border-box;
+        padding: 10px;
         margin: auto;
     }
 
-    h1{
-        font-size: 1.5em;
-    }
-    li {
-        font-size: 1em;
+    form{
+        position: static;
+        margin: auto;
+        font-weight: 500;
     }
 
-    img.img-time {
-        height: 5vh;
+    label {
+        font-size: larger;
     }
-    #edit{
-        width: 40%;
-        display: inline-block;
-        margin: 0 auto
-    
+
+    div#div_lista > table{
+        margin:auto;
+        width: 90%;
     }
-    #div_lista, #edit > h1{
-        text-align: center;
-    } 
-    
-    #div_lista{
-        width: 50%;
-        display: inline-block;
-        margin: 0 auto}
-    }
-    form{
-       height: 550px ;
-        margin-top: .2cm;
-    }  
-    
-    select{
-        font-size: 1em;
-    }
-    input{
-        font-size: 1em;
-    }
+}   

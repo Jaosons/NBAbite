@@ -15,7 +15,10 @@
 
 body,hmtl {
     overflow-x: hidden;
-    background-color: var(--cor5);
+    background-image: url("https://wallpapercave.com/wp/wp1827445.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .verde{
     color: #094;
