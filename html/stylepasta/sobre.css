@@ -118,6 +118,7 @@ p {
 .material-symbols-outlined{
     background-color: rgb(0, 0, 0,0);
     color: black;
+    min-width: 0;
 }
 #emailsim{
     height: 20px;
@@ -154,6 +155,6 @@ p {
    }
    div#conteudo{
     background-size: contain;
-    height: auto;
+    
 }
 }
