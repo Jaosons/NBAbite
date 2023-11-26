@@ -28,7 +28,7 @@ class UsuarioController extends Controller
 
             $usuario->save();
 
-            return ['message' => 'OK'];
+            return ['message' => 'Conta cadastrada!'];
         } 
         catch (\Exception $erro) {
             return ['message' => 'erro', 'details' => $erro];
@@ -75,7 +75,7 @@ class UsuarioController extends Controller
             // Salva as alterações no banco de dados
             $usuario->save();
     
-            return response()->json(['message' => 'OK', 'data' => $usuario]);
+            return response()->json(['message' => 'Conta atualizda!', 'data' => $usuario]);
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 500);
         }
@@ -88,7 +88,7 @@ class UsuarioController extends Controller
 
             $usuario->delete();
 
-            return ['message' => 'OK'];
+            return ['message' => 'Conta excluida!'];
 
         }
         catch (\Exception $erro) {
