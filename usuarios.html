@@ -30,37 +30,40 @@
             <li><a href="../user/sobre.html">SOBRE</a></li>
         </ul>
     </nav>
-    <div class="lista">
+    <div id="div_lista">
         <h1>LISTA</h1>
-        <p></p>
+        <section id="lista">
+
+        </section>
+        <button type="button" onclick="read()"></button>
     </div>
 
-    <div class="edit">
+    <div id="edit">
         <h1>EDITAR / EXCLUIR</h1>
-        <form method="get">
+        <form id="update">
             <h1>Cadastro</h1>
-            <label for="id" id="id">Id: </label><br>
-            <input type="number" name="id" placeholder="Digite o id" required><br> 
-            <label for="nome" id="name" >Nome: </label><br>
-            <input type="text"name="nome" placeholder="Digite o Nome" required><br>
-            <label for="sobrenome">Sobrenome: </label><br>
-            <input type="text" name="sobrenome" placeholder="Digite o sobrenome" required><br>
-            <label for="date">Data de nascimento: </label><br>
-            <input id ="forms" type="date" name="date" required><br>
-            <label for="cpf">CPF: </label><br>
-            <input type="text" name="cpf" id="" placeholder="Digite o CPF" required><br>
-            <label for="email">E-mail: </label><br>
-            <input type="email" name="email" placeholder="Digite o email" required><br>
-            <label for="senha">Senha: </label><br>
-            <input type="password" name="senha" placeholder="Digite a senha" required><br>
-            <label for="sx">Qual o gênero: </label><br>
-            <select name="sx" id="ge">
-                <option value="mas">Masculino</option>
-                <option value="fem">Feminino</option>
-                <option value="perso">Outros</option>
+            <label for="id">Id: </label><br>
+            <input type="number" name="idUsuario" id="idUsuario" placeholder="Digite o ID" required><br> 
+            <label for="novoNome">Nome: </label><br>
+            <input type="text" name="novoNome" placeholder="Digite o Nome"><br>
+            <label for="novoSobrenome">Sobrenome: </label><br>
+            <input type="text" name="novoSobrenome" placeholder="Digite o sobrenome"><br>
+            <label for="novoNascimento">Data de nascimento: </label><br>
+            <input id ="forms" type="date" name="novoNascimento" ><br>
+            <label for="novoCpf">CPF: </label><br>
+            <input type="text" name="novoCpf" id="" placeholder="Digite o CPF"><br>
+            <label for="novoEmail">E-mail: </label><br>
+            <input type="email" name="novoEmail" placeholder="Digite o email"><br>
+            <label for="novaSenha">Senha: </label><br>
+            <input type="password" name="novaSenha" placeholder="Digite a senha" autocomplete="on"><br>
+            <label for="novoGenero">Qual o gênero: </label><br>
+            <select name="novoGenero" id="ge">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outros</option>
             </select><br>
-            <label for="estado">Estado</label><br>
-            <select name="estado" id="est">
+            <label for="novoEstado">Estado</label><br>
+            <select name="novoEstado" id="est">
                 <option value="" selected>Escolha o Estado</option>
                 <optgroup label="Sudeste">
                     <option value="SP">São Paulo</option>
@@ -100,11 +103,12 @@
                     <option value="TO">Tocantins (TO)</option>
                 </optgroup>
             </select>
-            <a href="../../index.html"><button type="button">Enviar</button></a>
-            <a href="../../index.html"><button type="button">Cancelar</button></a>
+            <button type="button" onclick="update()">Editar</button>
+            <button type="button" onclick="delet()">Deletar</button></a>
         </form>
     </body>
     </div>
+    <script src="html/script/api.js"></script>
     <script src="html/script/script.js"></script>
 </body>
 </html>

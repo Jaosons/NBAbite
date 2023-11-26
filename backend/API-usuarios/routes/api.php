@@ -24,8 +24,8 @@ Route::namespace('Api')->group(function () {
 
     Route::post('/usuario/create', '\App\Http\Controllers\Api\UsuarioController@create');
 
-    Route::get('/usuario/read', '\App\Http\Controllers\Api\UsuarioController@read');
-    Route::get('/usuario/read/{id}', '\App\Http\Controllers\Api\UsuarioController@select');
+    Route::get('/usuarios/read', '\App\Http\Controllers\Api\UsuarioController@read');
+    Route::get('/usuario/select/{id}', '\App\Http\Controllers\Api\UsuarioController@select');
 
     Route::put('/usuario/update/{id}', '\App\Http\Controllers\Api\UsuarioController@update');
 

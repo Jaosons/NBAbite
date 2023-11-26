@@ -66,7 +66,7 @@ button:hover {
     background-color: #cacaca;
 }
 
-.lista, .edit > h1{
+#div_lista, #edit > h1{
     text-align: center;
 } 
 
@@ -207,17 +207,17 @@ li {
     img.img-time {
         height: 5vh;
     }
-    .edit{
+    #edit{
         width: 40%;
         display: inline-block;
         margin: 0 auto
     
     }
-    .lista, .edit > h1{
+    #div_lista, #edit > h1{
         text-align: center;
     } 
     
-    .lista{
+    #div_lista{
         width: 50%;
         display: inline-block;
         margin: 0 auto}

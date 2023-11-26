@@ -61,25 +61,23 @@ class UsuarioController extends Controller
 
     public function update(Request $request, $id) {
         try {
-
+            // Busca o usuário existente pelo ID
             $usuario = Usuario::find($id);
-
-            $usuario->nome = $request->nome;
-            $usuario->sobrenome = $request->sobrenome;
-            $usuario->nascimento = $request->nascimento;
-            $usuario->cpf = $request->cpf;
-            $usuario->email = $request->email;
-            $usuario->senha = $request->senha;
-            $usuario->genero = $request->genero;
-            $usuario->estado = $request->estado;
-
+    
+            // Se o usuário não existe, retorna uma resposta de erro
+            if (!$usuario) {
+                return response()->json(['error' => 'Usuário não encontrado'], 404);
+            }
+    
+            // Mescla os valores existentes com os valores fornecidos no request
+            $usuario->fill(array_filter($request->all()));
+    
+            // Salva as alterações no banco de dados
             $usuario->save();
-
-            return ['message' => 'OK', 'data' => $request->all()];
-
-        }
-        catch (\Exception $erro) {
-            return ['message' => 'erro', 'details' => $erro];
+    
+            return response()->json(['message' => 'OK', 'data' => $usuario]);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
         }
     }
 
@@ -96,5 +94,9 @@ class UsuarioController extends Controller
         catch (\Exception $erro) {
             return ['message' => 'erro', 'details' => $erro];
         }
+    }
+
+    public function token() {
+        return response()->json(['csrf-token' => csrf_token()]);
     }
 }
