@@ -16,6 +16,10 @@
 body,hmtl {
     overflow-x: hidden;
     background-color: var(--cor5);
+    background-image: url("https://clutchpoints.com/_next/image?url=https%3A%2F%2Fwp.clutchpoints.com%2Fwp-content%2Fuploads%2F2023%2F07%2Fwarriors-news-why-steve-kerr-is-such-a-special-coach-per-former-nba-player-prewrite-do-not-pub-see-notes.jpg&w=1920&q=75");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -110,6 +114,7 @@ div#conteudo {
     transform: translate(-50%, -50%);
     padding: 10px;
     border-radius: 10px;
+    margin-top: 40vw;
 }
 
 p {
@@ -155,6 +160,6 @@ p {
    }
    div#conteudo{
     background-size: contain;
-    
+    margin-top: 10vw;
 }
 }
