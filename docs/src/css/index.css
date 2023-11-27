@@ -96,6 +96,11 @@ aside#calendario {
     background-color: rgb(255, 255, 255, 0.777);
 }
 
+strong {
+    padding: 10px;
+    font-size: 1.17em;
+}
+
 article {
     margin: 10px;
     border-radius: 10px;
