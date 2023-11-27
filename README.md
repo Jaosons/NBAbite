@@ -3,11 +3,11 @@
 ## Objetivo:
 Buscamos fazer um site como o site "HLTV" mas diferente do HLTV, que tem seu foco em informar sobre o cenário competitivo de um jogo, iremos fazer sobre basquete.
 ### Em nosso site possui 6 páginas com conteudo, sendo elas as:
-* <a href="https://jaosons.github.io/NBAbite/index.html" target="_blank">HOME/NOTÍCIAS</a>
+* [HOME/NOTÍCIAS](https://jaosons.github.io/NBAbite/);
 * [TIMES](https://jaosons.github.io/NBAbite/src/html/times.html);
 * [CLASSIFICAÇÃO](https://jaosons.github.io/NBAbite/src/html/classificacao.html);
 * [SOBRE](https://jaosons.github.io/NBAbite/src/html/sobre.html);
-* [CADASTRO](https://jaosons.github.io/NBAbite/src/html/cadastro.html);
+* [CADASTRO](https://jaosons.github.io/NBAbite/src/html/cadastro.html).
 ### A página notícia foi formentada com algumas notícias de sites vinculado a nba (Espn, BuzzSport) sobre a temporada 2023-2024 que se deu inicio a temporada em 24 de outubro.
 ### A página times possui apenas os times mas separados por sua divisão com os times da conferência leste estando nas divisões Atlântico Central e Sudeste e os times da conferência oeste na Noroeste Pacífico e Sudoeste.
 ### A página classificação formentada por uma tabela que possui as informações Vitórias, Derrotas, a portecentagem de jogos ganho, Média de pontos feitos e tomado e o saldo de pontos mostrando se foi positivo ou negativo de cada time na temporada 2022-2023
