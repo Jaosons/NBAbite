@@ -3,7 +3,7 @@
 ## Objetivo:
 Buscamos fazer um site como o site "HLTV" mas diferente do HLTV, que tem seu foco em informar sobre o cenário competitivo de um jogo, iremos fazer sobre basquete.
 ### Em nosso site possui 6 páginas com conteudo, sendo elas as:
-* [HOME/NOTÍCIAS](https://jaosons.github.io/NBAbite/src/html/index.html);
+* [HOME/NOTÍCIAS](https://jaosons.github.io/NBAbite/index.html);
 * [TIMES](https://jaosons.github.io/NBAbite/src/html/times.html);
 * [CLASSIFICAÇÃO](https://jaosons.github.io/NBAbite/src/html/classificacao.html);
 * [SOBRE](https://jaosons.github.io/NBAbite/src/html/sobre.html);
