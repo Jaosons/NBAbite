@@ -17,3 +17,7 @@ function clickMenu(){
 function NaoDisponivel () {
     alert("Está página não está disponível");
 }
+
+function voltar() {
+    window.history.back();
+}
