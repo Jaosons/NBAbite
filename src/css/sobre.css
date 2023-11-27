@@ -53,24 +53,6 @@ div#user > span {
     font-size: 1.4em;
 }
 
-div#search-bar {
-    flex: 1;
-}
-
-div#search-bar > span {
-    display: block;
-    background-color: white;
-    width: 100%;
-    height: 40%;
-    text-align: center;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-div#search-bar > span > a {
-    font-size: 1.3em;
-}
-
 i {
     background-color: #1a3151; 
     min-width: 100%;
@@ -99,6 +81,7 @@ nav a{
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
 div#conteudo {
@@ -106,15 +89,9 @@ div#conteudo {
     width: calc(70% - 10px);
     max-width: 546px;
     min-width: 409px;
-    height: auto;
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 10px;
     border-radius: 10px;
-    margin-top: 40vw;
 }
 
 p {
@@ -160,6 +137,6 @@ p {
    }
    div#conteudo{
     background-size: contain;
-    margin-top: 10vw;
-}
+    margin-top: 10vh;
+    }
 }
