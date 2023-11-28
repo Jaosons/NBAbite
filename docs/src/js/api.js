@@ -43,6 +43,7 @@ function create() {
 
     // Enviar os dados do formulário
     xhr.send(formData);
+    voltar();
 }
 
 function update() {
